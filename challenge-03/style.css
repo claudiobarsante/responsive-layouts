@@ -1,7 +1,9 @@
 :root {
 	--color-text: #fff;
 }
-* {
+*,
+*::before,
+*::after {
 	margin: 0;
 	padding: 0;
 	outline: 0;
@@ -25,10 +27,11 @@ button {
 /* Top */
 .container {
 	background-color: #23424a;
+	color: var(--color-text);
+	padding: 100px 0;
 }
 
 .title {
-	color: var(--color-text);
 	font-size: 4.805rem;
 	font-weight: 900;
 	line-height: 5.631rem;
@@ -36,7 +39,6 @@ button {
 }
 
 .description {
-	color: var(--color-text);
 	font-size: 2.1rem;
 	font-weight: 400;
 	line-height: 3.154rem;
@@ -44,6 +46,7 @@ button {
 }
 
 .btn {
+	display: inline-block;
 	line-height: 150.19%;
 	background: #38cfd9;
 	border-radius: 31.5px;
@@ -53,13 +56,22 @@ button {
 	font-weight: bold;
 	height: 63px;
 	letter-spacing: 0.05em;
-	padding: 1.6rem 4.8rem 1.5rem 4.9rem;
+	padding: 2rem 4.8rem 1.5rem 4.9rem;
 	text-transform: uppercase;
+	text-decoration: none;
+}
+
+.btn:focus,
+.btn:hover {
+	opacity: 0.75;
 }
 
 .hero {
-	padding-top: 7.9rem;
-	padding-bottom: 18rem;
-	padding-left: 10.5rem;
-	width: 40%;
+	margin: 0 auto;
+	max-width: 900px;
+	width: 80%;
+}
+
+.hero__text {
+	width: 60%;
 }
