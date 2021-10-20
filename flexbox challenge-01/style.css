@@ -54,6 +54,7 @@ h1 {
 	display: flex;
 	gap: 100px;
 	padding: 0 9% 3rem;
+	background-color: #136c72;
 }
 .col {
 	text-align: center;
@@ -66,16 +67,12 @@ h1 {
 }
 
 .col + .col {
-	margin-left: 100px;
+	margin-left: 30px;
 }
 
-.col__title {
+.accent-text {
 	color: #87629a;
 	font-size: 2.25rem;
-}
-
-.bottom {
-	background-color: #136c72;
 }
 
 .hero {
