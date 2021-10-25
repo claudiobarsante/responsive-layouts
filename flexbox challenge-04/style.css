@@ -1,0 +1,43 @@
+*,
+::after,
+::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+.container {
+	max-width: 1128px;
+	margin: 0 auto;
+}
+
+.hero {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	background-color: #f3eed9;
+
+	min-height: 660px;
+}
+
+.hero__title {
+	font-size: 1.8rem;
+	font-family: 'Roboto', serif;
+	text-transform: uppercase;
+	letter-spacing: 0.5rem;
+}
+
+.title-big {
+	font-family: 'Playfair Display', serif;
+	text-align: center;
+	max-width: 70%;
+	font-size: 6rem;
+	color: #824936;
+	font-weight: 900;
+}
